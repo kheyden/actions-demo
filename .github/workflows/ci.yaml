@@ -30,7 +30,6 @@ jobs:
 
   lint:
     name: lint
-    needs: [build]
     runs-on: ubuntu-latest
     strategy:
       matrix:
