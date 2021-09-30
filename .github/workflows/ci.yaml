@@ -27,21 +27,6 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
-    steps:
-    - name: checkout code
-      uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Install dependencies
+    - name: Lint Codebase
       run: |
-        npm install
+        npm run lint
