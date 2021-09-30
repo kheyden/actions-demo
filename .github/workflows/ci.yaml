@@ -28,4 +28,4 @@ jobs:
       run: |
         npm install
     - name: custom action
-      uses: ./.github/actions/my-action@fe17f8ea927f6f59d9cb5bdb18d67488e7258a3c
+      uses: ./.github/actions/my-action
