@@ -34,7 +34,5 @@ jobs:
     steps:
     - name: checkout code
       uses: actions/checkout@v2
-    - name: semgrep-action
-      uses: returntocorp/semgrep-action@v1
 
 
