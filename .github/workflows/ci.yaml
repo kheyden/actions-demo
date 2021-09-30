@@ -27,6 +27,5 @@ jobs:
     - name: Install dependencies
       run: |
         npm install
-    - name: Lint Codebase
-      run: |
-        npm run lint
+    - name: custom action
+      uses: .github/actions/my-action@f1299e72e49cc5ee19ec495389794fa87d1c2990
